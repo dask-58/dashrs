@@ -1,7 +1,9 @@
 [package]
 name = "dashrs"
 version = "0.1.0"
-edition = "2021"
+authors = ["dask58 googldhruv@gmail.com"]
+description = "A command-line dashboard for system stats"
+repository = "https://github.com/dask-58/dashrs"
 
 [dependencies]
 crossterm = "0.25"

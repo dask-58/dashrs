@@ -26,6 +26,7 @@ fn main() -> crossterm::Result<()> {
             let disk_usage = (1.0 - (disk.available_space() as f32 / disk.total_space() as f32)) * 100.0;
             _print("Disk Usage", disk_usage, Color::Cyan)?;
         }
+        // imp to flush
         stdout.flush()?;
         std::thread::sleep(Duration::from_secs(1));
     }
